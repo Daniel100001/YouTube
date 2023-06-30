@@ -5,32 +5,23 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.home_4_android_4.data.models.VideoCategory
-import com.example.youtube.databinding.ItemYouTubeBinding
+import com.example.youtube.databinding.ItemYoutubeRecyclerviewHorizontalBinding
 
-class CategoryAdapter :
-    ListAdapter<VideoCategory, CategoryAdapter.CategoryViewHolder>(DiffUtilCallback()) {
+class CategoryAdapterHorizontal :
+    ListAdapter<VideoCategory, CategoryAdapterHorizontal.CategoryViewHolder>(DiffUtilCallback()) {
 
-    inner class CategoryViewHolder(private val binding: ItemYouTubeBinding) :
+    inner class CategoryViewHolder(private val binding: ItemYoutubeRecyclerviewHorizontalBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun onBind(item: VideoCategory) = with(binding) {
-            Glide.with(binding.imageView.context)
-                .load(item.snippet.thumbnails.standard.url)
-                .into(binding.imageView)
 
-            Glide.with(binding.imageView2.context)
-                .load(item.snippet.thumbnails.standard.url)
-                .into(binding.imageView2)
-
-            binding.name.text = item.snippet.localized.title
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         return CategoryViewHolder(
-            ItemYouTubeBinding.inflate(
+            ItemYoutubeRecyclerviewHorizontalBinding.inflate(
                 LayoutInflater.from(
                     parent.context
                 ), parent,

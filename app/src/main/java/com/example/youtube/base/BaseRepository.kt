@@ -1,7 +1,7 @@
 package com.example.youtube.base
 
 import androidx.lifecycle.liveData
-import com.example.homework1_android4.utils.Resource
+import com.example.youtube.utils.Resource
 import retrofit2.Response
 
 open class BaseRepository {

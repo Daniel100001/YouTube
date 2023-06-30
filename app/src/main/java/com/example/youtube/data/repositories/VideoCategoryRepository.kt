@@ -8,7 +8,6 @@ class VideoCategoryRepository @Inject constructor(
     private val service: VideoCategoryApiService
 ) : BaseRepository(){
 
-
     fun fetchVideoCategory() = doRequest {
         service.fetchVideoCategory()
     }

@@ -1,4 +1,4 @@
-package com.example.homework1_android4.utils
+package com.example.youtube.utils
 
 sealed class Resource<T>(
 
