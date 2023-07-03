@@ -1,6 +1,6 @@
-package com.example.home_4_android_4.data.models
+package com.example.youtube.data.models
 
-import com.example.youtube.data.models.Snippet
+import com.example.youtube.data.models.*
 import com.google.gson.annotations.SerializedName
 
 data class VideoCategory(
@@ -27,7 +27,7 @@ data class VideoCategory(
     @SerializedName("suggestions")
     val suggestions: Suggestions,
     @SerializedName("id")
-    val id: String = "",
+    val id: String ,
     @SerializedName("status")
     val status: Status,
     @SerializedName("statistics")

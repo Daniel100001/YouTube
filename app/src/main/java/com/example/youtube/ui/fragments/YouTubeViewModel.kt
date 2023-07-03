@@ -10,5 +10,10 @@ class YouTubeViewModel @Inject constructor(
     private val repository: VideoCategoryRepository
 ): ViewModel() {
 
+    fun fetchVideoCategoryId(id: String) = repository.fetchVideoCategoryId(id)
+
+    fun fetchVideos() = repository.fetchVideos()
+
     fun fetchVideoCategory() = repository.fetchVideoCategory()
+
 }

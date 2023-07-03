@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.home_4_android_4.data.models.VideoCategory
+import com.example.youtube.data.models.VideoCategory
 import com.example.youtube.databinding.ItemYouTubeBinding
 
 class CategoryAdapter :

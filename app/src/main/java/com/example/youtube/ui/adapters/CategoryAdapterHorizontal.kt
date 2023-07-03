@@ -5,17 +5,25 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.home_4_android_4.data.models.VideoCategory
+import com.example.youtube.data.models.VideoCategory
 import com.example.youtube.databinding.ItemYoutubeRecyclerviewHorizontalBinding
 
-class CategoryAdapterHorizontal :
+class CategoryAdapterHorizontal(private val onItemClick: (id: String) -> Unit ) :
     ListAdapter<VideoCategory, CategoryAdapterHorizontal.CategoryViewHolder>(DiffUtilCallback()) {
 
     inner class CategoryViewHolder(private val binding: ItemYoutubeRecyclerviewHorizontalBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun onBind(item: VideoCategory) = with(binding) {
+        init {
+            itemView.setOnClickListener {
+                getItem(absoluteAdapterPosition)?.let {
+                    onItemClick(it.id)
+                }
+            }
+        }
 
+        fun onBind(item: VideoCategory) = with(binding) {
+            materialButton.text = item.snippet.title
         }
     }
 
@@ -35,9 +43,7 @@ class CategoryAdapterHorizontal :
     }
 
     companion object {
-
         class DiffUtilCallback : DiffUtil.ItemCallback<VideoCategory>() {
-
             override fun areItemsTheSame(oldItem: VideoCategory, newItem: VideoCategory): Boolean {
                 return oldItem.id == newItem.id
             }
