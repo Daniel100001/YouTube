@@ -4,11 +4,11 @@ import com.google.gson.annotations.SerializedName
 
 data class AudioStreamsItem(
     @SerializedName("channelCount")
-    val channelCount: String = "",
+    val channelCount: String,
     @SerializedName("codec")
-    val codec: String = "",
+    val codec: String,
     @SerializedName("vendor")
-    val vendor: String = "",
+    val vendor: String,
     @SerializedName("bitrateBps")
-    val bitrateBps: String = ""
+    val bitrateBps: String
 )

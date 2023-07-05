@@ -6,13 +6,13 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface VideoCategoryApiService {
+interface VideosApiService {
 
-    @GET("videoCategories")
-    suspend fun fetchVideoCategory(
+    @GET("videos")
+    suspend fun fetchVideos(
         @Query("part") part: String = "snippet",
         @Query("regionCode") regionCode: String = "ru",
         @Query("chart") chart: String = "mostPopular",
+        @Query("videoCategoryId") categoryId: String? = null
     ): Response<YoutubeResponse<VideoCategory>>
-
 }

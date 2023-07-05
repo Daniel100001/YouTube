@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class PageInfo(
     @SerializedName("totalResults")
-    val totalResults: String = "",
+    val totalResults: String,
     @SerializedName("resultsPerPage")
-    val resultsPerPage: String = ""
+    val resultsPerPage: String
 )

@@ -2,29 +2,29 @@ package com.example.youtube.data.models
 
 import com.google.gson.annotations.SerializedName
 
-data class Snippet(
+data class  Snippet(
     @SerializedName("defaultLanguage")
-    val defaultLanguage: String = "",
+    val defaultLanguage: String,
     @SerializedName("publishedAt")
-    val publishedAt: String = "",
+    val publishedAt: String,
     @SerializedName("defaultAudioLanguage")
-    val defaultAudioLanguage: String = "",
+    val defaultAudioLanguage: String,
     @SerializedName("localized")
     val localized: Localized,
     @SerializedName("description")
-    val description: String = "",
+    val description: String,
     @SerializedName("title")
-    val title: String = "",
+    val title: String,
     @SerializedName("thumbnails")
     val thumbnails: Thumbnails,
     @SerializedName("channelId")
-    val channelId: String = "",
+    val channelId: String,
     @SerializedName("categoryId")
-    val categoryId: String = "",
+    val categoryId: String,
     @SerializedName("channelTitle")
-    val channelTitle: String = "",
+    val channelTitle: String,
     @SerializedName("tags")
     val tags: List<String>?,
     @SerializedName("liveBroadcastContent")
-    val liveBroadcastContent: String = ""
+    val liveBroadcastContent: String
 )

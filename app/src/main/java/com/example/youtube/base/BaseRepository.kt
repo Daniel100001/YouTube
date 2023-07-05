@@ -11,7 +11,7 @@ open class BaseRepository {
         try {
             request().also {
                 if (it.isSuccessful && it.body() != null){
-                emit(Resource.Success(it.body()!!))
+                    emit(Resource.Success(it.body()!!))
                 }else{
                     emit(Resource.Error(null, it.message()))
                 }

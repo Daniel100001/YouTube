@@ -4,23 +4,23 @@ import com.google.gson.annotations.SerializedName
 
 data class Status(
     @SerializedName("license")
-    val license: String = "",
+    val license: String,
     @SerializedName("selfDeclaredMadeForKids")
-    val selfDeclaredMadeForKids: String = "",
+    val selfDeclaredMadeForKids: String,
     @SerializedName("failureReason")
-    val failureReason: String = "",
+    val failureReason: String,
     @SerializedName("privacyStatus")
-    val privacyStatus: String = "",
+    val privacyStatus: String,
     @SerializedName("publishAt")
-    val publishAt: String = "",
+    val publishAt: String,
     @SerializedName("uploadStatus")
-    val uploadStatus: String = "",
+    val uploadStatus: String,
     @SerializedName("rejectionReason")
-    val rejectionReason: String = "",
+    val rejectionReason: String,
     @SerializedName("publicStatsViewable")
-    val publicStatsViewable: String = "",
+    val publicStatsViewable: String,
     @SerializedName("embeddable")
-    val embeddable: String = "",
+    val embeddable: String,
     @SerializedName("madeForKids")
-    val madeForKids: String = ""
+    val madeForKids: String
 )

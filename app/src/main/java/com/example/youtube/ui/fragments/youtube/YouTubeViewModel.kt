@@ -1,4 +1,4 @@
-package com.example.youtube.ui.fragments
+package com.example.youtube.ui.fragments.youtube
 
 import androidx.lifecycle.ViewModel
 import com.example.youtube.data.repositories.VideoCategoryRepository

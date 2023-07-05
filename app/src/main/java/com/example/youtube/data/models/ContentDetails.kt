@@ -4,21 +4,21 @@ import com.google.gson.annotations.SerializedName
 
 data class ContentDetails(
     @SerializedName("duration")
-    val duration: String = "",
+    val duration: String,
     @SerializedName("licensedContent")
-    val licensedContent: String = "",
+    val licensedContent: String,
     @SerializedName("caption")
-    val caption: String = "",
+    val caption: String,
     @SerializedName("definition")
-    val definition: String = "",
+    val definition: String,
     @SerializedName("contentRating")
     val contentRating: ContentRating,
     @SerializedName("hasCustomThumbnail")
-    val hasCustomThumbnail: String = "",
+    val hasCustomThumbnail: String,
     @SerializedName("regionRestriction")
     val regionRestriction: RegionRestriction,
     @SerializedName("projection")
-    val projection: String = "",
+    val projection: String,
     @SerializedName("dimension")
-    val dimension: String = ""
+    val dimension: String
 )

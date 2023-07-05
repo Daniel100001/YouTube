@@ -4,137 +4,137 @@ import com.google.gson.annotations.SerializedName
 
 data class ContentRating(
     @SerializedName("ifcoRating")
-    val ifcoRating: String = "",
+    val ifcoRating: String,
     @SerializedName("lsfRating")
-    val lsfRating: String = "",
+    val lsfRating: String,
     @SerializedName("cicfRating")
-    val cicfRating: String = "",
+    val cicfRating: String,
     @SerializedName("tvpgRating")
-    val tvpgRating: String = "",
+    val tvpgRating: String,
     @SerializedName("ilfilmRating")
-    val ilfilmRating: String = "",
+    val ilfilmRating: String,
     @SerializedName("nkclvRating")
-    val nkclvRating: String = "",
+    val nkclvRating: String,
     @SerializedName("catvfrRating")
-    val catvfrRating: String = "",
+    val catvfrRating: String,
     @SerializedName("egfilmRating")
-    val egfilmRating: String = "",
+    val egfilmRating: String,
     @SerializedName("cccRating")
-    val cccRating: String = "",
+    val cccRating: String,
     @SerializedName("resorteviolenciaRating")
-    val resorteviolenciaRating: String = "",
+    val resorteviolenciaRating: String,
     @SerializedName("chvrsRating")
-    val chvrsRating: String = "",
+    val chvrsRating: String,
     @SerializedName("nbcplRating")
-    val nbcplRating: String = "",
+    val nbcplRating: String,
     @SerializedName("chfilmRating")
-    val chfilmRating: String = "",
+    val chfilmRating: String,
     @SerializedName("anatelRating")
-    val anatelRating: String = "",
+    val anatelRating: String,
     @SerializedName("smsaRating")
-    val smsaRating: String = "",
+    val smsaRating: String,
     @SerializedName("smaisRating")
-    val smaisRating: String = "",
+    val smaisRating: String,
     @SerializedName("kfcbRating")
-    val kfcbRating: String = "",
+    val kfcbRating: String,
     @SerializedName("skfilmRating")
-    val skfilmRating: String = "",
+    val skfilmRating: String,
     @SerializedName("acbRating")
-    val acbRating: String = "",
+    val acbRating: String,
     @SerializedName("mibacRating")
-    val mibacRating: String = "",
+    val mibacRating: String,
     @SerializedName("djctqRatingReasons")
-    val ytRating: String = "",
+    val ytRating: String,
     @SerializedName("kijkwijzerRating")
-    val kijkwijzerRating: String = "",
+    val kijkwijzerRating: String,
     @SerializedName("mdaRating")
-    val mdaRating: String = "",
+    val mdaRating: String,
     @SerializedName("fcoRating")
-    val fcoRating: String = "",
+    val fcoRating: String,
     @SerializedName("mekuRating")
-    val mekuRating: String = "",
+    val mekuRating: String,
     @SerializedName("mccaaRating")
-    val mccaaRating: String = "",
+    val mccaaRating: String,
     @SerializedName("cncRating")
-    val cncRating: String = "",
+    val cncRating: String,
     @SerializedName("rteRating")
-    val rteRating: String = "",
+    val rteRating: String,
     @SerializedName("nbcRating")
-    val nbcRating: String = "",
+    val nbcRating: String,
     @SerializedName("moctwRating")
-    val moctwRating: String = "",
+    val moctwRating: String,
     @SerializedName("mocRating")
-    val mocRating: String = "",
+    val mocRating: String,
     @SerializedName("csaRating")
-    val csaRating: String = "",
+    val csaRating: String,
     @SerializedName("mpaaRating")
-    val mpaaRating: String = "",
+    val mpaaRating: String,
     @SerializedName("pefilmRating")
-    val pefilmRating: String = "",
+    val pefilmRating: String,
     @SerializedName("cscfRating")
-    val cscfRating: String = "",
+    val cscfRating: String,
     @SerializedName("bfvcRating")
-    val bfvcRating: String = "",
+    val bfvcRating: String,
     @SerializedName("mccypRating")
-    val mccypRating: String = "",
+    val mccypRating: String,
     @SerializedName("mpaatRating")
-    val mpaatRating: String = "",
+    val mpaatRating: String,
     @SerializedName("mcstRating")
-    val mcstRating: String = "",
+    val mcstRating: String,
     @SerializedName("eefilmRating")
-    val eefilmRating: String = "",
+    val eefilmRating: String,
     @SerializedName("grfilmRating")
-    val grfilmRating: String = "",
+    val grfilmRating: String,
     @SerializedName("bmukkRating")
-    val bmukkRating: String = "",
+    val bmukkRating: String,
     @SerializedName("cbfcRating")
-    val cbfcRating: String = "",
+    val cbfcRating: String,
     @SerializedName("djctqRating")
-    val djctqRating: String = "",
+    val djctqRating: String,
     @SerializedName("rcnofRating")
-    val rcnofRating: String = "",
+    val rcnofRating: String,
     @SerializedName("fmocRating")
-    val fmocRating: String = "",
+    val fmocRating: String,
     @SerializedName("mtrcbRating")
-    val mtrcbRating: String = "",
+    val mtrcbRating: String,
     @SerializedName("oflcRating")
-    val oflcRating: String = "",
+    val oflcRating: String,
     @SerializedName("agcomRating")
-    val agcomRating: String = "",
+    val agcomRating: String,
     @SerializedName("russiaRating")
-    val russiaRating: String = "",
+    val russiaRating: String,
     @SerializedName("cceRating")
-    val cceRating: String = "",
+    val cceRating: String,
     @SerializedName("fskRating")
-    val fskRating: String = "",
+    val fskRating: String,
     @SerializedName("rtcRating")
-    val rtcRating: String = "",
+    val rtcRating: String,
     @SerializedName("nfvcbRating")
-    val nfvcbRating: String = "",
+    val nfvcbRating: String,
     @SerializedName("incaaRating")
-    val incaaRating: String = "",
+    val incaaRating: String,
     @SerializedName("medietilsynetRating")
-    val medietilsynetRating: String = "",
+    val medietilsynetRating: String,
     @SerializedName("eirinRating")
-    val eirinRating: String = "",
+    val eirinRating: String,
     @SerializedName("fpbRatingReasons")
-    val icaaRating: String = "",
+    val icaaRating: String,
     @SerializedName("catvRating")
-    val catvRating: String = "",
+    val catvRating: String,
     @SerializedName("fcbmRating")
-    val fcbmRating: String = "",
+    val fcbmRating: String,
     @SerializedName("fpbRating")
-    val fpbRating: String = "",
+    val fpbRating: String,
     @SerializedName("bbfcRating")
-    val bbfcRating: String = "",
+    val bbfcRating: String,
     @SerializedName("kmrbRating")
-    val kmrbRating: String = "",
+    val kmrbRating: String,
     @SerializedName("nfrcRating")
-    val nfrcRating: String = "",
+    val nfrcRating: String,
     @SerializedName("cnaRating")
-    val cnaRating: String = "",
+    val cnaRating: String,
     @SerializedName("czfilmRating")
-    val czfilmRating: String = "",
+    val czfilmRating: String,
     @SerializedName("ecbmctRating")
-    val ecbmctRating: String = ""
+    val ecbmctRating: String,
 )

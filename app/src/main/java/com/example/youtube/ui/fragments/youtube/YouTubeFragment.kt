@@ -1,4 +1,4 @@
-package com.example.youtube.ui.fragments
+package com.example.youtube.ui.fragments.youtube
 
 import android.util.Log
 import androidx.fragment.app.viewModels

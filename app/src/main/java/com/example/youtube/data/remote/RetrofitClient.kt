@@ -1,6 +1,7 @@
 package com.example.youtube.data.remote
 
 import com.example.youtube.data.remote.apiservices.VideoCategoryApiService
+import com.example.youtube.data.remote.apiservices.VideosApiService
 import com.example.youtube.data.remote.interceptors.ApiKeyInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -29,5 +30,7 @@ class RetrofitClient {
     private fun provideLoggingInterceptor() = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
     fun provideVideoCategoryApiService() = retrofitClient.create(VideoCategoryApiService::class.java)
+
+    fun provideVideoApiService() = retrofitClient.create(VideosApiService::class.java)
 
 }

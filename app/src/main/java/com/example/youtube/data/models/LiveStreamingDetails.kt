@@ -4,15 +4,15 @@ import com.google.gson.annotations.SerializedName
 
 data class LiveStreamingDetails(
     @SerializedName("activeLiveChatId")
-    val activeLiveChatId: String = "",
+    val activeLiveChatId: String,
     @SerializedName("actualStartTime")
-    val actualStartTime: String = "",
+    val actualStartTime: String,
     @SerializedName("scheduledStartTime")
-    val scheduledStartTime: String = "",
+    val scheduledStartTime: String,
     @SerializedName("scheduledEndTime")
-    val scheduledEndTime: String = "",
+    val scheduledEndTime: String,
     @SerializedName("actualEndTime")
-    val actualEndTime: String = "",
+    val actualEndTime: String,
     @SerializedName("concurrentViewers")
-    val concurrentViewers: String = ""
+    val concurrentViewers: String
 )

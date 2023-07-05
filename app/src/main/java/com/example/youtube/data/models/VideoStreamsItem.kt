@@ -4,19 +4,19 @@ import com.google.gson.annotations.SerializedName
 
 data class VideoStreamsItem(
     @SerializedName("codec")
-    val codec: String = "",
+    val codec: String,
     @SerializedName("vendor")
-    val vendor: String = "",
+    val vendor: String,
     @SerializedName("rotation")
-    val rotation: String = "",
+    val rotation: String,
     @SerializedName("frameRateFps")
-    val frameRateFps: String = "",
+    val frameRateFps: String,
     @SerializedName("heightPixels")
-    val heightPixels: String = "",
+    val heightPixels: String,
     @SerializedName("aspectRatio")
-    val aspectRatio: String = "",
+    val aspectRatio: String,
     @SerializedName("bitrateBps")
-    val bitrateBps: String = "",
+    val bitrateBps: String,
     @SerializedName("widthPixels")
-    val widthPixels: String = ""
+    val widthPixels: String
 )

@@ -1,9 +1,9 @@
-package com.example.youtube.data.models
+package com.example.youtube.data.models.videocategory
 
 import com.example.youtube.data.models.*
 import com.google.gson.annotations.SerializedName
 
-data class VideoCategory(
+data class  VideoCategory(
     @SerializedName("snippet")
     val snippet: Snippet,
     @SerializedName("fileDetails")

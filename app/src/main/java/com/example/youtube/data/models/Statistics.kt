@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName
 
 data class Statistics(
     @SerializedName("dislikeCount")
-    val dislikeCount: String = "",
+    val dislikeCount: String,
     @SerializedName("likeCount")
-    val likeCount: String = "",
+    val likeCount: String,
     @SerializedName("viewCount")
-    val viewCount: String = "",
+    val viewCount: String,
     @SerializedName("favoriteCount")
-    val favoriteCount: String = "",
+    val favoriteCount: String,
     @SerializedName("commentCount")
-    val commentCount: String = ""
+    val commentCount: String
 )

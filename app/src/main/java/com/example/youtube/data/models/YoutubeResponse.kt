@@ -2,17 +2,17 @@ package com.example.youtube.data.models
 
 import com.google.gson.annotations.SerializedName
 
-data class YoutubeResponce<T> (
+data class YoutubeResponse<T> (
     @SerializedName("prevPageToken")
-    val prevPageToken: String = "",
+    val prevPageToken: String,
     @SerializedName("kind")
-    val kind: String = "",
+    val kind: String,
     @SerializedName("nextPageToken")
-    val nextPageToken: String = "",
+    val nextPageToken: String,
     @SerializedName("pageInfo")
     val pageInfo: PageInfo,
     @SerializedName("etag")
-    val etag: String = "",
+    val etag: String,
     @SerializedName("items")
     val items: List<T>
  )

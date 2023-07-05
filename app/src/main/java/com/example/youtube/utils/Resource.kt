@@ -1,7 +1,6 @@
 package com.example.youtube.utils
 
 sealed class Resource<T>(
-
     val data: T? = null,
     val message: String? = null
 ) {
